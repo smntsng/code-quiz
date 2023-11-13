@@ -1,18 +1,22 @@
+/* body styling */
 body {
   font-family: Arial;
   font-size: 120%;
 }
 
+/* link styling */
 a {
   color: #563d7c;
   text-decoration: none;
   transition: color 0.1s;
 }
 
+/* link hover styling */
 a:hover {
   color: #8570a5;
 }
 
+/* button styling */
 button {
   display: inline-block;
   margin: 5px;
@@ -26,52 +30,58 @@ button {
   transition: background-color 0.1s;
 }
 
+/* button hover styling */
 button:hover {
   background-color: #8570a5;
 }
 
+/* question choice styling */
 .choices button {
   display: block;
 }
 
+/* user text input */
 input[type="text"] {
   font-size: 100%;
 }
 
+/* highscores list styling */
 ol {
   padding-left: 0px;
   max-height: 400px;
   overflow: auto;
 }
-
+/* highscores list item styling */
 li {
   padding: 5px;
   list-style: decimal inside none;
 }
-
+/* highscores list item odd no. styling */
 li:nth-child(odd) {
   background-color: #f3edfc;
 }
-
+/* quiz and highscore page format styling */
 .wrapper {
   margin: 100px auto 0 auto;
   max-width: 600px;
 }
-
+/* hides questions and choices + ending screen */
 .hide {
   display: none;
 }
-
+/* quiz starting content */
 .start {
   text-align: center;
 }
 
+/* link to view highscores styling */
 .scores {
   position: absolute;
   top: 10px;
   left: 10px;
 }
 
+/* display correct or incorrect styling */
 .feedback {
   font-style: italic;
   font-size: 120%;
@@ -81,6 +91,7 @@ li:nth-child(odd) {
   border-top: 2px solid #ccc;
 }
 
+/* timer styling */
 .timer {
   position: absolute;
   top: 10px;
