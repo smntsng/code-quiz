@@ -59,3 +59,36 @@ console.log("this is the question jS")
 // msg("Hello World");
 // msgBox("Hello World");
 // alertBox("Hello World");
+
+// list of questions with choices and answers
+
+
+// var questions 
+//     // Q1
+// { Question: "Inside which HTML element do we put the JavaScript?" ,
+// // // var q1Choices: ["<script>", "<javascript>", "<js>", "<scripting>"],
+// // var q1Choices: ["script", "javascript", "js", "scripting"],
+// // var milks = ['2%', 'Whole', 'Oat', 'Coconut', 'Soy'];
+// food: ['Bagel', 'Danish', 'Muffin'],
+// // Answer: (questions.Choices[0]);
+// // console.log(questions.q1Choices[0]);
+// };
+// console.log('You can choose from the following size options: ' + questions.food[0]);
+
+// var questions = {
+//     Question: "Inside which HTML element do we put the JavaScript?",
+//     q1Choices: ["<script>", "<javascript>", "<js>", "<scripting>"],
+//     Answer: (questions.q1Choices[0]),
+//   };
+//   console.log('You can choose from the following size options: ' + questions.q1Choices[0]);
+
+  var questions = {
+    // Q1
+    Question: "Inside which HTML element do we put the JavaScript?",
+    q1Choices: ["<script>", "<javascript>", "<js>", "<scripting>"],
+    // A1
+  };
+  var q1Answer = questions.q1Choices[0];
+// answer check
+  console.log(q1Answer);
+
