@@ -36,13 +36,8 @@ var quizQuestions = [{
     }
 ];
 
-// Sense check
-console.log("Answer 1: " + quizQuestions.Question1.q1Answer)
-console.log("Answer 2: " + quizQuestions.Question2.q2Answer)
-console.log("Answer 3: " + quizQuestions.Question3.q3Answer)
-console.log("Answer 4: " + quizQuestions.Question4.q4Answer)
-console.log("Answer 5: " + quizQuestions.Question5.q5Answer)
-console.log("Answer 6: " + quizQuestions.Question6.q6Answer)
+console.log(quizQuestions.length)
+
 
 
 

@@ -1,9 +1,7 @@
 
 // click to hide starting quiz content and show questions
 var startScreenEl = document.getElementById("start-screen");
-var questionsTitleEl = document.getElementById("question-title");
-var choicesEl = document.getElementById("choices");
-var questionsEl = document.getElementById("questions");
+
 
 startScreenEl.addEventListener("click", hideStartScreen);
 startScreenEl.addEventListener("click", showQuizQuestions);
@@ -14,13 +12,19 @@ function hideStartScreen() {
 }
 
 function showQuizQuestions(){
-    questionsEl.style.display ='block';
+
+// questionsEl.style.display ='block';
+
+var QuestionsEl = quizQuestions[0].question;
+
+for (var i = 0; i < quizQuestions.length; i++) {
+    console.log(quizQuestions[i].question);
     
 }
-
-function showQuizQ1(){
-    document.getElementById("question-title").innerHTML = quizQuestions.Question1;
 }
+
+showQuizQuestions();
+
 
 
 
