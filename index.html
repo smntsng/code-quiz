@@ -10,10 +10,12 @@
   </head>
 
   <body>
+    <!-- link to view highscores HTML -->
     <div class="scores"><a href="highscores.html">View Highscores</a></div>
-
+ <!-- countdown timer -->
     <div class="timer">Time: <span id="time">0</span></div>
 
+    <!-- starting quiz page -->
     <div class="wrapper">
       <div id="start-screen" class="start">
         <h1>Coding Quiz Challenge</h1>
@@ -24,16 +26,23 @@
         </p>
         <button id="start">Start Quiz</button>
       </div>
+<!-- question content -->
+      <div id="questions" class="hide"> 
+        <!-- question title -->
+        <h2 id="question-title">  
 
-      <div id="questions" class="hide">
-        <h2 id="question-title"></h2>
-        <div id="choices" class="choices"></div>
+        </h2>
+        <!--questions answers  -->
+        <div id="choices" class="choices">
+
+        </div>
       </div>
-
+<!--ending page  -->
       <div id="end-screen" class="hide">
         <h2>All done!</h2>
         <p>Your final score is <span id="final-score"></span>.</p>
         <p>
+          <!-- user initial -->
           Enter initials: <input type="text" id="initials" max="3" />
           <button id="submit">Submit</button>
         </p>
