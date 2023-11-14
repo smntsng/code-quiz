@@ -1,27 +1,29 @@
-// Varibles
+// GlobalVaribles
 var startScreenEl = document.getElementById("start-screen");
 var questionsEl = document.getElementById("questions");
-var choicesEl = quizQuestions[0].choices
-console.log(choicesEl)
+var questionIndex = 0;
 
+// starting quiz
+startScreenEl.addEventListener("click", Start);
 
-
-startScreenEl.addEventListener("click", hideStartScreen);
-startScreenEl.addEventListener("click", showQuizQuestions);
-
-
-function hideStartScreen() {
+function Start() {
+    // hide starting quiz content
     startScreenEl.style.display = 'none';
+    // remove the hide css properties from the questions element
     questionsEl.removeAttribute("class");
 }
 
+// function to show questions
 function showQuizQuestions(){
-// questionsEl.style.display ='block';
-for (var i = 0; i < quizQuestions.length; i++) {
-    console.log(quizQuestions[i].question);
-    
+    // varible to target the quiz questions and the index of the array
+    var currentQuestion = quizQuestions[questionIndex];
+    // varible to target the question title element
+    var titleEl = document.getElementById("question-title");
+    // set the current question to the title element using textContent ()
+    titleEl.textContent = currentQuestion.question;
 }
-}
+
+showQuizQuestions();
 
 
 
