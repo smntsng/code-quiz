@@ -28,8 +28,13 @@ function startimer() {
    var timer = setInterval(function() {
         timeLeft--;
         document.getElementById("time").innerHTML = timeLeft;
-    }
-    , 1000);
+
+        if (timeLeft === 0) {
+            clearInterval(timer); 
+            questionsEl.setAttribute("class", "hide");
+            endScreenEl.removeAttribute("class");
+        }
+    }, 1000);
 }
 
 
@@ -59,7 +64,7 @@ choicesEl.innerHTML = "";
             console.log(event.target.innerText);
 
             if (event.target.innerText == currentQuestion.answer) {
-                if (++questionIndex < 5) {
+                if (++questionIndex < 5 ) {
                     showQuizQuestions();
             } else {
                 questionsEl.setAttribute("class", "hide");
