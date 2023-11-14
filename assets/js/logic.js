@@ -3,6 +3,7 @@ var startScreenEl = document.getElementById("start-screen");
 var questionsEl = document.getElementById("questions");
 var questionIndex = 0;
 var choicesEl =document.getElementById("choices");
+var endScreenEl = document.getElementById("end-screen"); 
 
 // starting quiz
 startScreenEl.addEventListener("click", Start);
@@ -57,13 +58,17 @@ choicesEl.innerHTML = "";
 
             console.log(event.target.innerText);
 
-            if (event.target.innerText === currentQuestion.answer) {
-                questionIndex++;
-                showQuizQuestions();
+            if (event.target.innerText == currentQuestion.answer) {
+                if (++questionIndex < 5) {
+                    showQuizQuestions();
             } else {
-                console.log("Incorrect!");
-            }
+                questionsEl.setAttribute("class", "hide");
+                endScreenEl.removeAttribute("class");
+                
+            }}
         });
+    
+
     });
 }
 
